@@ -1,0 +1,17 @@
+{
+  "name": "statistics-calculator",
+  "version": "1.0.0",
+  "description": "A simple statistics calculator.",
+  "repository": {},
+  "license": "MIT",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
+  "scripts": {
+    "start": "./app.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  }
+}
