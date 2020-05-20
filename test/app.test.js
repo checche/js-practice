@@ -78,3 +78,18 @@ describe('StatisticsCalculator#product', () => {
     expect(new StatisticsCalculator([]).product()).toEqual(1);
   });
 });
+
+describe('main', () => {
+  function nullMain() {
+    main([]);
+  }
+  function argMain() {
+    main(['foobar', 1234, 'hogefuga']);
+  }
+  it('引数がないときにThrowする。', () => {
+    expect(nullMain).toThrowError('At least one argument must be specified.');
+  });
+  it('引数がnumberではない時にThrowする。', () => {
+    expect(argMain).toThrowError(/^All arguments must be numbers:/);
+  });
+});
